@@ -60,13 +60,9 @@ function App() {
                 <th>Title</th>
                 <th>Completed</th>
               </tr>
-              {data.map((item) => {                                // changed here
+              {data.map((item) => {
                 return (
                   <tr key={item['id']}>
-                    {/* {Object.entries(item).map((field) => {        // changed here
-                      console.log('field: ', field);
-                      return <td>{field[1]}</td>
-                    })} */}
                     <td>{item["title"]}</td>
                     <td>{item["completed"] ? 'Yes' : 'No'}</td>
                   </tr>
